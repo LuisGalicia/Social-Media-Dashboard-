@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TheHeading
+      titulo="Social Media Dashboard"
+      subtitulo="Total Followers: 23,004"
+    />
+    <BaseCardMain
+      nombre="@nathanf"
+      numeroSeguidores="1987"
+      textoSeguidores="Followers"
+      textoActuales="12 Today"
+    />
+    <TheSubtitle 
+    titulo="Overview"
+    />
+    <BaseCardOverview
+      overviewTextoCarta="Page Views"
+      overviewTotalVistas="87"
+      overviewPorcentajeVistas="3%"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeading from "./components/TheHeading.vue";
+import TheSubtitle from "./components/TheSubtitle.vue";
+import BaseCardMain from "./components/BaseCardMain.vue";
+import BaseCardOverview from "./components/BaseCardOverview.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TheHeading,
+    TheSubtitle,
+    BaseCardMain,
+    BaseCardOverview,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
