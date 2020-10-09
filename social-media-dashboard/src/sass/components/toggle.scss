@@ -1,0 +1,56 @@
+.toggle--text {
+    float: left;
+    padding-top: 10%;
+    padding-right: 2%;
+    color: $darkGrayishBlue-color;
+}
+
+.toggle--checkbox {
+    float: right;
+    padding-top: 16%;
+}
+
+/* Hide default input */
+.toggle input {
+    display: none;
+  }
+  /* The container and background */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 50%;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:$toggleDark-color;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  
+  /* The sliding button */
+  .slider:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    right: 100%;
+    top: 10%;
+    background-color: $lightGrayishBlue-color;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  
+  /* On checked */
+  input:checked + .slider {
+    background-image:$toggleLight-color;
+  }
+  input:checked + .slider:before {
+    transform: translateX(37px);
+  }

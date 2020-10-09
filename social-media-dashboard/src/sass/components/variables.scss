@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*Fuentes*/
+$font-family: 'Inter', sans-serif;
+$font-sizeTitle: 14px;
+$font-sizeSubtitle: 10px;
+
+/*Colores primarios*/
+$limeGrenn-color: hsl(163, 72%, 41%);
+$brightRed-color: hsl(356, 69%, 56%);
+$facebook-color: hsl(208, 92%, 53%);
+$twitter-color: hsl(203, 89%, 53%);
+$instagram-color: linear-gradient (hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$youTube-color: hsl(348, 97%, 39%);
+
+/*Tema 'Dark'*/
+/**  Toggle  **/
+$toggleDark-color: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+/**  BackGround  **/
+$DarkBlue-color: hsl(230, 17%, 14%);
+/**  Top BackGround Pattern  **/
+$veryDarkBlue-color: hsl(232, 19%, 15%);
+/**  Card BackGround **/
+$darkDesaturatedBlue-color: hsl(228, 28%, 20%);
+/**  Text little   **/
+$desaturatedBlue-color: hsl(228, 34%, 66%);
+/**  Text major  **/
+$white-color: hsl(0, 0%, 100%);
+
+/*Tema 'Light'*/
+/**  Toggle  **/
+$toggleLight-color: hsl(230, 22%, 74%);
+/**  BackGround  **/
+$white-color: hsl(0, 0%, 100%);
+/**  Top BackGround Pattern  **/
+$veryPaleBlue-color: hsl(225, 100%, 98%);
+/**  Card BackGround **/
+$lightGrayishBlue-color: hsl(227, 47%, 96%);
+/**  Text little   **/
+$darkGrayishBlue-color: hsl(228, 12%, 44%);
+/**  Text major  **/
+$veryDarkBlue-color: hsl(230, 17%, 14%);
+
+
+/*Responsive*/
+$size-mobile: 375px;
+$size-desktop: 1440px;
+

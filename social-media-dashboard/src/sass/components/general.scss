@@ -1,0 +1,23 @@
+html, body {
+    background-color: $white-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-family;
+}
+.container {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.container--toggle {
+    float: right;
+    display: flex;
+    height: 100%;
+    width: 30%;
+}
+

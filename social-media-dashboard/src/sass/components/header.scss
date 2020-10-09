@@ -1,0 +1,21 @@
+
+.header {
+    background-color: $veryPaleBlue-color;
+    font-size: $font-sizeTitle;
+    height: 45%;
+    width: 100%;
+    margin: 0%;
+    flex-direction: column;
+}
+
+.header--title {
+    padding-left: 10%;
+    margin-bottom: 0%;
+    padding-top: 0.7%;
+}
+
+.header--subtitle {
+    padding-left: 10%;
+    margin-top: 0%;
+    color: $darkGrayishBlue-color;
+}

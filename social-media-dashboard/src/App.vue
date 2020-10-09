@@ -10,9 +10,7 @@
       textoSeguidores="Followers"
       textoActuales="12 Today"
     />
-    <TheSubtitle 
-    titulo="Overview"
-    />
+    <TheSubtitle titulo="Overview" />
     <BaseCardOverview
       overviewTextoCarta="Page Views"
       overviewTotalVistas="87"

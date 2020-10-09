@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/*Fuentes*/
+/*Colores primarios*/
+/*Tema 'Dark'*/
+/**  Toggle  **/
+/**  BackGround  **/
+/**  Top BackGround Pattern  **/
+/**  Card BackGround **/
+/**  Text little   **/
+/**  Text major  **/
+/*Tema 'Light'*/
+/**  Toggle  **/
+/**  BackGround  **/
+/**  Top BackGround Pattern  **/
+/**  Card BackGround **/
+/**  Text little   **/
+/**  Text major  **/
+/*Responsive*/
+html, body {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.container--toggle {
+  float: right;
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+
+.header {
+  background-color: #f5f7ff;
+  font-size: 14px;
+  height: 45%;
+  width: 100%;
+  margin: 0%;
+  flex-direction: column;
+}
+
+.header--title {
+  padding-left: 10%;
+  margin-bottom: 0%;
+  padding-top: 0.7%;
+}
+
+.header--subtitle {
+  padding-left: 10%;
+  margin-top: 0%;
+  color: #63687e;
+}
+
+.toggle--text {
+  float: left;
+  padding-top: 10%;
+  padding-right: 2%;
+  color: #63687e;
+}
+
+.toggle--checkbox {
+  float: right;
+  padding-top: 16%;
+}
+
+/* Hide default input */
+.toggle input {
+  display: none;
+}
+
+/* The container and background */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 50%;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: linear-gradient(#378fe6, #3eda82);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+/* The sliding button */
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: 100%;
+  top: 10%;
+  background-color: #f0f2fa;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+/* On checked */
+input:checked + .slider {
+  background-image: #aeb3cb;
+}
+
+input:checked + .slider:before {
+  transform: translateX(37px);
+}
+
+/*# sourceMappingURL=styles.css.map */
