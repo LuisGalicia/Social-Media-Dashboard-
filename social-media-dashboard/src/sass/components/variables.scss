@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700;800&display=swap" rel="stylesheet');
 /*Fuentes*/
 $font-family: 'Inter', sans-serif;
 $font-sizeTitle: 14px;
@@ -9,36 +9,48 @@ $limeGrenn-color: hsl(163, 72%, 41%);
 $brightRed-color: hsl(356, 69%, 56%);
 $facebook-color: hsl(208, 92%, 53%);
 $twitter-color: hsl(203, 89%, 53%);
-$instagram-color: linear-gradient (hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$instagram-color: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 $youTube-color: hsl(348, 97%, 39%);
 
 /*Tema 'Dark'*/
-/**  Toggle  **/
-$toggleDark-color: linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-/**  BackGround  **/
-$DarkBlue-color: hsl(230, 17%, 14%);
-/**  Top BackGround Pattern  **/
-$veryDarkBlue-color: hsl(232, 19%, 15%);
-/**  Card BackGround **/
-$darkDesaturatedBlue-color: hsl(228, 28%, 20%);
-/**  Text little   **/
-$desaturatedBlue-color: hsl(228, 34%, 66%);
-/**  Text major  **/
-$white-color: hsl(0, 0%, 100%);
+html[modo-oscuro='activado'] {
+    /**  Toggle  **/
+    --toggle-color: hsl(232, 19%, 15%);
+    /** Toggle state    **/
+    --toggle-color-state: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    /** Toggle state hover **/
+    --toggle-color-stateHover:hsl(228, 12%, 44%);
+    /**  BackGround  **/
+    --background-color: hsl(230, 17%, 14%);
+    /**  Top BackGround Pattern  **/
+    --backgroundTop-color: hsl(232, 19%, 15%);
+    /**  Card BackGround **/
+    --cardBackground-color: hsl(228, 28%, 20%);
+    /**  Text little   **/
+    --textLittle-color: hsl(228, 34%, 66%);
+    /**  Text major  **/
+    --textMajor-color: hsl(0, 0%, 100%);
+}
 
 /*Tema 'Light'*/
-/**  Toggle  **/
-$toggleLight-color: hsl(230, 22%, 74%);
-/**  BackGround  **/
-$white-color: hsl(0, 0%, 100%);
-/**  Top BackGround Pattern  **/
-$veryPaleBlue-color: hsl(225, 100%, 98%);
-/**  Card BackGround **/
-$lightGrayishBlue-color: hsl(227, 47%, 96%);
-/**  Text little   **/
-$darkGrayishBlue-color: hsl(228, 12%, 44%);
-/**  Text major  **/
-$veryDarkBlue-color: hsl(230, 17%, 14%);
+html[modo-oscuro='desactivado'] {
+    /**  Toggle  **/
+    --toggle-color: hsl(225, 100%, 98%);
+     /** Toggle state    **/
+     --toggle-color-state: hsl(228, 12%, 44%);
+     /** Toggle state hover **/
+    --toggle-color-stateHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    /**  BackGround  **/
+    --background-color: hsl(0, 0%, 100%);
+    /**  Top BackGround Pattern  **/
+    --backgroundTop-color: hsl(225, 100%, 98%);
+    /**  Card BackGround **/
+    --cardBackground-color: hsl(227, 47%, 96%);
+    /**  Text little   **/
+    --textLittle-color: hsl(228, 12%, 44%);
+    /**  Text major  **/
+    --textMajor-color: hsl(230, 17%, 14%);
+}
 
 
 /*Responsive*/

@@ -1,76 +1,139 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700;800&display=swap" rel="stylesheet');
 /*Fuentes*/
 /*Colores primarios*/
 /*Tema 'Dark'*/
-/**  Toggle  **/
-/**  BackGround  **/
-/**  Top BackGround Pattern  **/
-/**  Card BackGround **/
-/**  Text little   **/
-/**  Text major  **/
+html[modo-oscuro=activado] {
+  /**  Toggle  **/
+  --toggle-color: hsl(232, 19%, 15%);
+  /** Toggle state    **/
+  --toggle-color-state: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  /** Toggle state hover **/
+  --toggle-color-stateHover:hsl(228, 12%, 44%);
+  /**  BackGround  **/
+  --background-color: hsl(230, 17%, 14%);
+  /**  Top BackGround Pattern  **/
+  --backgroundTop-color: hsl(232, 19%, 15%);
+  /**  Card BackGround **/
+  --cardBackground-color: hsl(228, 28%, 20%);
+  /**  Text little   **/
+  --textLittle-color: hsl(228, 34%, 66%);
+  /**  Text major  **/
+  --textMajor-color: hsl(0, 0%, 100%);
+}
+
 /*Tema 'Light'*/
-/**  Toggle  **/
-/**  BackGround  **/
-/**  Top BackGround Pattern  **/
-/**  Card BackGround **/
-/**  Text little   **/
-/**  Text major  **/
+html[modo-oscuro=desactivado] {
+  /**  Toggle  **/
+  --toggle-color: hsl(225, 100%, 98%);
+  /** Toggle state    **/
+  --toggle-color-state: hsl(228, 12%, 44%);
+  /** Toggle state hover **/
+  --toggle-color-stateHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  /**  BackGround  **/
+  --background-color: hsl(0, 0%, 100%);
+  /**  Top BackGround Pattern  **/
+  --backgroundTop-color: hsl(225, 100%, 98%);
+  /**  Card BackGround **/
+  --cardBackground-color: hsl(227, 47%, 96%);
+  /**  Text little   **/
+  --textLittle-color: hsl(228, 12%, 44%);
+  /**  Text major  **/
+  --textMajor-color: hsl(230, 17%, 14%);
+}
+
 /*Responsive*/
 html, body {
-  background-color: white;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--textMajor-color);
+  font-family: "Inter", sans-serif;
+  display: block;
   padding: 0px;
   margin: 0px;
-  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
-  float: left;
+  display: inherit;
+  justify-content: inherit;
+  max-width: 1160px;
+  width: 100%;
+  margin-top: -65px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.container--header {
+  display: inherit;
+  width: 100%;
+  max-width: 1160px;
+  justify-content: inherit;
+  margin: auto;
+}
+
+.container--title {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  height: 100%;
 }
 
 .container--toggle {
-  float: right;
   display: flex;
   height: 100%;
-  width: 30%;
+  padding-top: 50px;
+}
+
+.container--socialNetwork {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.container--cardNumber {
+  padding-bottom: 30px;
 }
 
 .header {
-  background-color: #f5f7ff;
+  display: flex;
+  background-color: var(--backgroundTop-color);
+  padding-bottom: 130px;
+  border-radius: 0 0 20px 20px;
+  justify-content: space-between;
   font-size: 14px;
-  height: 45%;
   width: 100%;
   margin: 0%;
-  flex-direction: column;
 }
 
 .header--title {
-  padding-left: 10%;
-  margin-bottom: 0%;
-  padding-top: 0.7%;
+  color: var(--textMajor-color);
+  font-weight: 800;
+  font-size: 30px;
+  padding-top: 35px;
+  margin-bottom: 5px;
 }
 
 .header--subtitle {
-  padding-left: 10%;
-  margin-top: 0%;
-  color: #63687e;
+  padding: 0%;
+  margin: 0%;
+  color: var(--textLittle-color);
 }
 
 .toggle--text {
-  float: left;
-  padding-top: 10%;
-  padding-right: 2%;
-  color: #63687e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textLittle-color);
+  padding-right: 10px;
 }
 
 .toggle--checkbox {
-  float: right;
-  padding-top: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hide default input */
@@ -84,7 +147,10 @@ html, body {
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-left: 50%;
+}
+
+.slider:hover {
+  background: var(--toggle-color-stateHover);
 }
 
 .slider {
@@ -94,7 +160,7 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: linear-gradient(#378fe6, #3eda82);
+  background: var(--toggle-color-state);
   border-radius: 10px;
   transition: all 0.5s;
 }
@@ -106,19 +172,61 @@ html, body {
   width: 15px;
   height: 15px;
   right: 100%;
+  left: 5%;
   top: 10%;
-  background-color: #f0f2fa;
+  background: var(--background-color);
   border-radius: 10px;
   transition: all 0.5s;
 }
 
-/* On checked */
+/* On checked
 input:checked + .slider {
-  background-image: #aeb3cb;
+  background-color:var(--toggle-color-state);
+} */
+input:checked + .slider:before {
+  transform: translateX(21px);
 }
 
-input:checked + .slider:before {
-  transform: translateX(37px);
+.card {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--cardBackground-color);
+  border-radius: 10px;
+}
+
+.card--title {
+  font-size: 11px;
+  padding-top: 20px;
+  color: var(--textLittle-color);
+}
+
+.card--number {
+  font-size: 20px;
+  font-weight: 800;
+  font-size: 50px;
+  color: var(--textMajor-color);
+}
+
+.card--follows {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: var(--textLittle-color);
+}
+
+.card--today-up {
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #1db489;
+}
+
+.card--today-down {
+  font-size: 12px;
+  font-weight: 700;
+  color: #dc414c;
 }
 
 /*# sourceMappingURL=styles.css.map */

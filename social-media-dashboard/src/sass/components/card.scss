@@ -1,0 +1,40 @@
+.card {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--cardBackground-color);
+    border-radius: 10px;
+}
+.card--title {
+    font-size: 11px;
+    padding-top: 20px;
+    color: var(--textLittle-color);
+}
+
+.card--number {
+    font-size: 20px;
+    font-weight: 800;
+    font-size: 50px;
+    color: var(--textMajor-color);
+}
+
+.card--follows {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: var(--textLittle-color);
+}
+
+.card--today-up {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: $limeGrenn-color;
+}
+
+.card--today-down {
+    font-size: 12px;
+    font-weight: 700;
+    color: $brightRed-color;
+}

@@ -1,23 +1,58 @@
 html, body {
-    background-color: $white-color;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--textMajor-color);
+    font-family: $font-family;
+    display: block;
     padding: 0px;
     margin: 0px;
-    font-family: $font-family;
+    box-sizing: border-box;
+    
 }
+
 .container {
-    float: left;
+    display: inherit;
+    justify-content: inherit;
+    max-width: 1160px;
+    width: 100%;
+    margin-top: -65px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.container--header {
+    display: inherit;
+    width: 100%;
+    max-width: 1160px;
+    justify-content: inherit;
+    margin: auto;
+
+}
+
+.container--title {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    height: 100%;
 }
 
 .container--toggle {
-    float: right;
     display: flex;
     height: 100%;
-    width: 30%;
+    padding-top: 50px;
 }
+
+.container--socialNetwork {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.container--cardNumber {
+    padding-bottom: 30px;
+}
+
 

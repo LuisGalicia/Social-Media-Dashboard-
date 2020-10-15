@@ -1,13 +1,15 @@
 .toggle--text {
-    float: left;
-    padding-top: 10%;
-    padding-right: 2%;
-    color: $darkGrayishBlue-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textLittle-color);
+    padding-right: 10px;
 }
 
 .toggle--checkbox {
-    float: right;
-    padding-top: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Hide default input */
@@ -20,8 +22,12 @@
     display: inline-block;
     width: 40px;
     height: 20px;
-    margin-left: 50%;
   }
+
+  .slider:hover {
+    background: var(--toggle-color-stateHover);
+  }
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -29,7 +35,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:$toggleDark-color;
+    background:var(--toggle-color-state);
     border-radius: 10px;
     transition: all 0.5s;
   }
@@ -41,16 +47,17 @@
     width: 15px;
     height: 15px;
     right: 100%;
+    left: 5%;
     top: 10%;
-    background-color: $lightGrayishBlue-color;
+    background: var(--background-color);
     border-radius: 10px;
     transition: all 0.5s;
   }
-  
-  /* On checked */
+
+  /* On checked
   input:checked + .slider {
-    background-image:$toggleLight-color;
-  }
+    background-color:var(--toggle-color-state);
+  } */
   input:checked + .slider:before {
-    transform: translateX(37px);
+    transform: translateX(21px);
   }
