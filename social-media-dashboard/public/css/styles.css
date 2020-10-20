@@ -49,7 +49,12 @@ html, body {
   display: block;
   padding: 0px;
   margin: 0px;
+}
+
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -191,38 +196,55 @@ input:checked + .slider:before {
   text-align: center;
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 325px;
   background-color: var(--cardBackground-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
-
+.card::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.card:nth-child(1)::before {
+  background: #198ff5;
+}
+.card:nth-child(2)::before {
+  background: #1ca0f2;
+}
+.card:nth-child(3)::before {
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+.card:nth-child(4)::before {
+  background: #c4032a;
+}
 .card--title {
   font-size: 11px;
   padding-top: 20px;
   color: var(--textLittle-color);
 }
-
 .card--number {
   font-size: 20px;
   font-weight: 800;
   font-size: 50px;
   color: var(--textMajor-color);
 }
-
 .card--follows {
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 5px;
   color: var(--textLittle-color);
 }
-
 .card--today-up {
   font-size: 12px;
   font-weight: 700;
   padding-bottom: 20px;
   color: #1db489;
 }
-
 .card--today-down {
   font-size: 12px;
   font-weight: 700;

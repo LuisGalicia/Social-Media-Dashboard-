@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h3 class="card--title">{{ nombre }}</h3>
+    <h3 class="card--title">{{ nombre }} </h3>
     <div class="container--cardNumber">
       <div class="card--number">{{ numeroSeguidores }}</div>
       <div class="card--follows">{{ textoSeguidores }}</div>

@@ -2,39 +2,68 @@
     text-align: center;
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 325px;
     background-color: var(--cardBackground-color);
-    border-radius: 10px;
-}
-.card--title {
-    font-size: 11px;
-    padding-top: 20px;
-    color: var(--textLittle-color);
-}
+    border-radius: 5px;
+    
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 
-.card--number {
-    font-size: 20px;
-    font-weight: 800;
-    font-size: 50px;
-    color: var(--textMajor-color);
-}
+    &:nth-child(1)::before {
+        background: $facebook-color;
+    }
 
-.card--follows {
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 5px;
-    color: var(--textLittle-color);
-}
+    &:nth-child(2)::before {
+        background: $twitter-color;
+    }
 
-.card--today-up {
-    font-size: 12px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: $limeGrenn-color;
-}
+    &:nth-child(3)::before {
+        background: $instagram-color;
+    }
 
-.card--today-down {
-    font-size: 12px;
-    font-weight: 700;
-    color: $brightRed-color;
+    &:nth-child(4)::before {
+        background: $youtube-color;
+    }
+
+    &--title {
+        font-size: 11px;
+        padding-top: 20px;
+        color: var(--textLittle-color);
+    }
+    
+    &--number {
+        font-size: 20px;
+        font-weight: 800;
+        font-size: 50px;
+        color: var(--textMajor-color);
+    }
+    
+    &--follows {
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 5px;
+        color: var(--textLittle-color);
+    }
+    
+    &--today-up {
+        font-size: 12px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: $limeGrenn-color;
+    }
+    
+    &--today-down {
+        font-size: 12px;
+        font-weight: 700;
+        color: $brightRed-color;
+    }
+
 }
