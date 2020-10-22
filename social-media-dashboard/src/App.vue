@@ -32,7 +32,7 @@
       />
       </div>
       
-      <TheSubtitle titulo="Overview" />
+      <TheSubtitle titulo="Overview today" />
       <BaseCardOverview
         overviewTextoCarta="Page Views"
         overviewTotalVistas="87"

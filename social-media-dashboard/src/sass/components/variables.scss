@@ -30,6 +30,8 @@ html[modo-oscuro='activado'] {
     --textLittle-color: hsl(228, 34%, 66%);
     /**  Text major  **/
     --textMajor-color: hsl(0, 0%, 100%);
+    /** Text overview **/
+    --textOverview-color:hsl(225, 100%, 98%);
 }
 
 /*Tema 'Light'*/
@@ -50,6 +52,8 @@ html[modo-oscuro='desactivado'] {
     --textLittle-color: hsl(228, 12%, 44%);
     /**  Text major  **/
     --textMajor-color: hsl(230, 17%, 14%);
+    /** Text overview **/
+    --textOverview-color:hsl(228, 12%, 44%);
 }
 
 

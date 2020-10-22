@@ -1,6 +1,7 @@
 
 .header {
     display: flex;
+    transition: background-color 0.5s;
     background-color: var(--backgroundTop-color);
     padding-bottom: 130px;
     border-radius: 0 0 20px 20px;
@@ -11,6 +12,7 @@
 }
 
 .header--title {
+    transition: color 0.5s;
     color: var(--textMajor-color);
     font-weight: 800;
     font-size: 30px;
@@ -19,6 +21,7 @@
 }
 
 .header--subtitle {
+    transition: color 0.5s;
     padding: 0%;
     margin: 0%;
     color: var(--textLittle-color);

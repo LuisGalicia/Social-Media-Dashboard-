@@ -11,7 +11,12 @@
         </div>
         <div class="toggle--checkbox">
           <label class="toggle">
-            <input type="checkbox" checked />
+            <input
+              type="checkbox"
+              checked
+              v-model="stateCheckbox"
+              v-on:click="cambiaTema()"
+            />
             <span class="slider"></span>
           </label>
         </div>
@@ -26,6 +31,22 @@ export default {
   props: {
     titulo: String,
     subtitulo: String,
+  },
+
+  data() {
+    return {
+      stateCheckbox: "true",
+    };
+  },
+
+  methods: {
+    cambiaTema: function () {
+      if (this.stateCheckbox) {
+        document.documentElement.setAttribute("modo-oscuro", "activado");
+      } else {
+        document.documentElement.setAttribute("modo-oscuro", "desactivado");
+      }
+    },
   },
 };
 </script>
