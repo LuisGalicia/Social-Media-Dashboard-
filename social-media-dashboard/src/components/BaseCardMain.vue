@@ -4,7 +4,6 @@
       <figure
         class="icon-here"
         :fondo-icon="fondoIcon"
-        id="redSocialIcon"
       ></figure>
       <span class="card--header-title">{{ nombre }} </span>
     </div>
