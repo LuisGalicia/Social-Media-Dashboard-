@@ -1,5 +1,8 @@
 # Social-Media-Dashboard-
-In this repository you find out a simple social media dashboard developed with:
+In this repository you find out a responsive social media dashboard developed with:
 -VueJs
 -HTML
 -SASS
+
+--
+The main idea is support and re-use the card component.
