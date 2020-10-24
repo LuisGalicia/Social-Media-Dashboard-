@@ -12,6 +12,14 @@ $twitter-color: hsl(203, 89%, 53%);
 $instagram-color: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 $youtube-color: hsl(348, 97%, 39%);
 
+/*Íconos que usará la app*/
+$facebook-icon: url("../icon/icon-facebook.svg");
+$twitter-icon: url("../icon/icon-twitter.svg");
+$instagram-icon: url("../icon/icon-instagram.svg");
+$youtube-icon: url("../icon/icon-youtube.svg");
+$flecha-up: url("../icon/icon-up.svg");
+$flecha-down: url("../icon/icon-down.svg");
+
 /*Tema 'Dark'*/
 html[modo-oscuro='activado'] {
     /**  Toggle  **/
@@ -19,13 +27,15 @@ html[modo-oscuro='activado'] {
     /** Toggle state    **/
     --toggle-color-state: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     /** Toggle state hover **/
-    --toggle-color-stateHover:hsl(228, 12%, 44%);
+    --toggle-color-stateHover:linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     /**  BackGround  **/
     --background-color: hsl(230, 17%, 14%);
     /**  Top BackGround Pattern  **/
     --backgroundTop-color: hsl(232, 19%, 15%);
     /**  Card BackGround **/
     --cardBackground-color: hsl(228, 28%, 20%);
+    /** Card Hover BackGround**/
+    --cardBackground-color-hover: hsl(228,28%,30%);
     /**  Text little   **/
     --textLittle-color: hsl(228, 34%, 66%);
     /**  Text major  **/
@@ -48,6 +58,8 @@ html[modo-oscuro='desactivado'] {
     --backgroundTop-color: hsl(225, 100%, 98%);
     /**  Card BackGround **/
     --cardBackground-color: hsl(227, 47%, 96%);
+    /** Card Hover BackGround**/
+    --cardBackground-color-hover: hsl(227,47%,90%);
     /**  Text little   **/
     --textLittle-color: hsl(228, 12%, 44%);
     /**  Text major  **/
@@ -56,6 +68,63 @@ html[modo-oscuro='desactivado'] {
     --textOverview-color:hsl(228, 12%, 44%);
 }
 
+/* Variables para cambiar los íconos & colores de las 'Cards' principales*/
+figure[fondo-icon='Facebook'] {
+    background-image: $facebook-icon;
+}
+figure[fondo-icon='Twitter'] {
+    background-image: $twitter-icon;
+}
+figure[fondo-icon='Instagram'] {
+    background-image: $instagram-icon;
+}
+figure[fondo-icon='Youtube'] {
+    background-image: $youtube-icon;
+}
+
+figure[flecha-icon='Up'] {
+    background-image: $flecha-up;
+}
+
+figure[flecha-icon='Down'] {
+    background-image: $flecha-down;
+}
+
+span[color-texto='Up'] {
+    color: $limeGrenn-color;
+}
+
+span[color-texto='Down'] {
+    color: $brightRed-color;
+}
+
+/* Variables para cambiar los íconos & colores de las 'Cards' dentro del overview*/
+figure[overview-logo='Facebook'] {
+    background-image: $facebook-icon;
+}
+figure[overview-logo='Twitter'] {
+    background-image: $twitter-icon;
+}
+figure[overview-logo='Instagram'] {
+    background-image: $instagram-icon;
+}
+figure[overview-logo='Youtube'] {
+    background-image: $youtube-icon;
+}
+
+figure[overview-row-icon='Up'] {
+    background-image: $flecha-up;
+}
+figure[overview-row-icon='Down'] {
+    background-image: $flecha-down;
+}
+
+span[overview-text-color='Up'] {
+    color: $limeGrenn-color;
+}
+span[overview-text-color='Down'] {
+    color: $brightRed-color;
+}
 
 /*Responsive*/
 $size-mobile: 375px;

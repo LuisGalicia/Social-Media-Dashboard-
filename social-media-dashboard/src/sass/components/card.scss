@@ -2,10 +2,15 @@
     text-align: center;
     position: relative;
     width: 100%;
-    max-width: 325px;
     transition: background-color 0.5s;
     background-color: var(--cardBackground-color);
     border-radius: 5px;
+    height: 200px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--cardBackground-color-hover);
+    }
     
     &::before {
         display: block;
@@ -34,16 +39,27 @@
         background: $youtube-color;
     }
 
-    &--title {
+    &--header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 11px;
-        padding-top: 20px;
-        color: var(--textLittle-color);
+        padding-top: 25px;
+
+        &-title {
+            margin-left: 7.5px;
+            font-weight: 700;
+            font-size: 9px;
+            transition: color 0.3s;
+            color: var(--textLittle-color);
+            transition: color 0.5s;
+        }
     }
     
     &--number {
-        font-size: 20px;
         font-weight: 800;
         font-size: 50px;
+        padding-top: 20px;
         color: var(--textMajor-color);
     }
     
@@ -54,17 +70,68 @@
         color: var(--textLittle-color);
     }
     
-    &--today-up {
+    &--footer {
         font-size: 12px;
         font-weight: 700;
-        padding-bottom: 20px;
-        color: $limeGrenn-color;
-    }
-    
-    &--today-down {
-        font-size: 12px;
-        font-weight: 700;
-        color: $brightRed-color;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+            padding-left: 10px;
+        }
     }
 
+}
+
+.card--overview {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    transition: background-color 0.5s;
+    background-color: var(--cardBackground-color);
+    border-radius: 5px;
+    height: 100px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--cardBackground-color-hover);
+    }
+
+    &--title {
+        text-align: left;
+        font-size: 12px;
+        color: var(--textLittle-color);
+        font-weight: 800;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    &--number {
+        text-align: left;
+        font-weight: 800;
+        font-size: 30px;
+        color: var(--textMajor-color);
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    &--footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 12px;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-right: 20px;
+        &-content {
+            align-self: flex-end;
+            padding-left: 10px;
+        }
+    }
+
+    &--icon {
+        padding-top: 20px;
+        padding-left: 80px;
+    }
 }
