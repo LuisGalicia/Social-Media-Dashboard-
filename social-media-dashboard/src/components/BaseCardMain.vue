@@ -1,19 +1,19 @@
 <template>
-  <div class="card">
-    <div class="card--header">
+  <div class="card-main">
+    <div class="card-main__header">
       <figure
-        class="icon-here"
+        class="icon-social"
         :fondo-icon="fondoIcon"
       ></figure>
-      <span class="card--header-title">{{ nombre }} </span>
+      <span class="card-main__title">{{ nombre }} </span>
     </div>
-    <div class="padd-30b">
-      <div class="card--number">{{ numeroSeguidores }}</div>
-      <div class="card--follows">{{ textoSeguidores }}</div>
+    <div class="padd-30--b">
+      <div class="card-main__number">{{ numeroSeguidores }}</div>
+      <div class="card-main__follows">{{ textoSeguidores }}</div>
     </div>
-    <div class="card--footer">
+    <div class="card-main__footer">
       <figure class="icon-row" :flecha-icon="flechaIcon"></figure>
-      <span class="card--footer-content" :color-texto="flechaIcon">{{
+      <span class="add-30--l" :color-texto="flechaIcon">{{
         textoActuales
       }}</span>
     </div>

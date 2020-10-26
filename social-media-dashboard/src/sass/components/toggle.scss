@@ -1,22 +1,8 @@
-.toggle--text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--textLittle-color);
-    padding-right: 10px;
-}
-
-.toggle--checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Hide default input */
 .toggle input {
     display: none;
   }
-  /* The container and background */
+/* The container and background */
 .toggle {
     position: relative;
     display: inline-block;
@@ -24,24 +10,23 @@
     height: 21px;
   }
 
-  .slider:hover {
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:var(--toggle-color-state);
+  border-radius: 10px;
+  transition: all 0.5s;
+
+  &:hover {
     background: var(--toggle-color-stateHover);
   }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:var(--toggle-color-state);
-    border-radius: 10px;
-    transition: all 0.5s;
-  }
-  
   /* The sliding button */
-  .slider:before {
+  &:before {
     position: absolute;
     content: "";
     width: 15px;
@@ -53,11 +38,12 @@
     border-radius: 10px;
     transition: all 0.5s;
   }
-
-  /* On checked
+}
+  
+/* On checked
   input:checked + .slider {
-    background-color:var(--toggle-color-state);
-  } */
-  input:checked + .slider:before {
-    transform: translateX(21px);
-  }
+  background-color:var(--toggle-color-state);
+} */
+input:checked + .slider:before {
+  transform: translateX(21px);
+}

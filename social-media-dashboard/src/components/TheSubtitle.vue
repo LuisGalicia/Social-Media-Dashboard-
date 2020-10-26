@@ -1,5 +1,5 @@
 <template>
-    <div class="container--overview container-subtitle">
+    <div class="container__overview">
         {{ titulo }}
     </div>
 </template>

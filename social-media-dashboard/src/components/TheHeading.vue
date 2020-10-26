@@ -1,15 +1,15 @@
 <template>
-  <header class="header">
-    <div class="container--header">
-      <div class="container--title">
-        <div class="header--title">{{ titulo }}</div>
-        <h3 class="header--subtitle">{{ subtitulo }}</h3>
+  <header class="container__header">
+    <div class="header">
+      <div class="header__header">
+        <div class="header__title">{{ titulo }}</div>
+        <h3 class="header__subtitle">{{ subtitulo }}</h3>
       </div>
-      <div class="container--toggle">
-        <div class="toggle--text">
+      <div class="header__toggle">
+        <div class="header__toggle-text">
           <h3>Dark mode</h3>
         </div>
-        <div class="toggle--checkbox">
+        <div class="header__toggle-container">
           <label class="toggle">
             <input
               type="checkbox"

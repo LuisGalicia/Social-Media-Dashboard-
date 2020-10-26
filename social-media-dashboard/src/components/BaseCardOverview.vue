@@ -1,24 +1,23 @@
 <template>
-  <div class="card--overview">
-    <div class="container--grid-secundary">
-      <div class="card--overview--title">
+  <div class="card-overview">
+    <div class="container__grid-secundary">
+      <div class="card-overview__title">
         {{ overviewTextoCarta }}
       </div>
-      <div class="card--overview--icon">
-        <figure class="icon-here" :overview-logo="overviewLogo"></figure>
+      <div class="card-overview__icon">
+        <figure class="icon-social" :overview-logo="overviewLogo"></figure>
       </div>
     </div>
-    <div class="container--grid-secundary">
-      <div class="card--overview--number">
+    <div class="container__grid-secundary">
+      <div class="card-overview__number">
         {{ overviewTotalVistas }}
       </div>
-      <div class="card--overview--footer">
+      <div class="card-overview__footer">
         <figure class="icon-row" :overview-row-icon="rowIcon"></figure>
         <span
-          class="card--overview--footer-content"
+          class="padd-30--l ali-sel--end"
           :overview-text-color="rowIcon"
-          >{{ overviewPorcentajeVistas }}</span
-        >
+          >{{ overviewPorcentajeVistas }}</span>
       </div>
     </div>
   </div>

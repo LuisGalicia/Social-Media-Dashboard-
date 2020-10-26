@@ -4,8 +4,8 @@
       titulo="Social Media Dashboard"
       subtitulo="Total Followers: 23,004"
     />
-    <div class="container">
-      <div class="container--grid-primary">
+    <div class="container__dashboard">
+      <div class="container__grid-primary">
         <BaseCardMain
           nombre="@nathanf"
           numeroSeguidores="1987"
@@ -42,7 +42,7 @@
 
       <TheSubtitle titulo="Overview today" />
 
-      <div class="container--grid-primary">
+      <div class="container__grid-primary">
         <BaseCardOverview
           overviewTextoCarta="Page Views"
           overviewTotalVistas="87"
@@ -73,7 +73,7 @@
         />
       </div>
 
-      <div class="container--grid-primary padd-25t">
+      <div class="container__grid-primary padd-25--t">
         <BaseCardOverview
           overviewTextoCarta="Retweets"
           overviewTotalVistas="117"
